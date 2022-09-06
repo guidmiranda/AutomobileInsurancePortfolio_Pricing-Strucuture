@@ -1,11 +1,3 @@
-#------------------------------------------------------------------------ #
-#     Data Science for Actuaries - Assignment
-#     NOVA IMS
-#     Group Project: Carlos Cardoso | 20211220   Carlota Reis | 20211208   
-#                   Guilherme Miranda | 20210420    Mariana Garcia | 20210838 
-#------------------------------------------------------------------------ #
-
-
 ##########################################################################
 #     Part I #
 ##########################################################################
@@ -130,7 +122,7 @@ model.poisson=goodfit(number_filtered$nclaims,type="poisson",method="ML")
 model.poisson
 summary(model.poisson)
 
-plot(model.poisson,main="Fitting a Poisson distribution",xlab="Nº of claims", ylab="Sqrt(Frequency)")
+plot(model.poisson,main="Fitting a Poisson distribution",xlab="NÂº of claims", ylab="Sqrt(Frequency)")
 
 #2. Test for a Gamma Distribution
 
@@ -153,7 +145,7 @@ model.nb=goodfit(number_filtered$nclaims,type="nbinomial",method="ML")
 model.nb
 summary(model.nb)
 
-plot(model.nb,main="Fitting a Negative Binomial distribution",xlab="Nº of claims", ylab="Sqrt(Frequency)")
+plot(model.nb,main="Fitting a Negative Binomial distribution",xlab="NÂº of claims", ylab="Sqrt(Frequency)")
 
 
 
